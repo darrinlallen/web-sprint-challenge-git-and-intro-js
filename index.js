@@ -295,8 +295,6 @@ function addArtist(arr, name, years, genre, nat, bio) {
     genre: "Web design",
     nat: "African American",
     bio: "lorem ipsum lorem ipsum lorem ipsum",
-    wikipedia: "http://www.cnn.com",
-    paintings: 0
   };
   clone.push(obj);
   return clone;
@@ -361,7 +359,7 @@ function artistByCountry(arr, nat){
 let clone = [];
   for(let i=0; i < arr.length; i++){
     if (arr[i]["nationality"] == nat){
-      clone.push(arr[i]["name"];)
+      clone.push(arr[i]["name"]);
     }
   }
   return clone;
