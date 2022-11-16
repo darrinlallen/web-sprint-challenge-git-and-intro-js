@@ -287,16 +287,11 @@ Use addArtist to do the following:
 5. Add the newly created object to the copied array, then return the copied array
 🌟 EXAMPLE: Invoking addArtist(artists, 'John Doe', '1988-2022', 'Full Stack Development', 'African American', 'I have a background in customer service at Big Retail Chain. I am attending BloomTech to become a Frontend Developer.') should return the artists array with the above object added to the end of the array. */
 
-function addArtist(arr, name, years, genre, nat, bio) {
-  let clone = arr.splice();
-  let obj = {
-    name: "darrin allen",
-    years: "1973 - 2022",
-    genre: "Web design",
-    nat: "African American",
-    bio: "lorem ipsum lorem ipsum lorem ipsum",
-  };
-  clone.push(obj);
+function addArtist(arr, name, years, genre, nationality, bio) {
+  let clone = arr.slice();
+  
+  
+  clone.push({name: name, years: years, genre: genre, nationality: nationality, bio: bio});
   return clone;
 }
 
